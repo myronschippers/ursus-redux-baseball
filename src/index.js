@@ -18,11 +18,21 @@ const catchersList = (state = defaultCatchers, action) => {
   return state;
 };
 
+const defaultCurrent = {
+  currentPitcher: 'Maud Nelson',
+  currentCatcher: 'Elston Howard',
+}
+
+const currentPlayers = (state = defaultCurrent, action) => {
+  return state;
+};
+
 // configure our redux store
 const storeInstance = createStore(
   combineReducers({
     pitchersList,
     catchersList,
+    currentPlayers,
   })
 );
 

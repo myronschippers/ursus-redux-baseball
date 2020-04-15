@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TotalPitchers from '../TotalPitchers/TotalPitchers';
+import TotalCatchers from '../TotalCatchers/TotalCatchers';
 
 class App extends Component {
   state = {
@@ -58,7 +59,7 @@ class App extends Component {
         <h2>On the Mound: {this.state.currentPitcher}</h2>
         <h2>Behind the Plate: {this.state.currentCatcher}</h2>
         <TotalPitchers />
-        <div>Total Catchers: {this.state.catcherList.length}</div>
+        <TotalCatchers />
         <h3>All Pitchers</h3>
         <form onSubmit={this.handlePitcherSubmit}>
           <input
