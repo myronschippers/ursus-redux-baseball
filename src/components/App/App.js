@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TotalPitchers from '../TotalPitchers/TotalPitchers';
 import TotalCatchers from '../TotalCatchers/TotalCatchers';
+import OnTheMound from '../OnTheMound/OnTheMound';
 
 class App extends Component {
   state = {
@@ -56,7 +57,7 @@ class App extends Component {
     return (
       <div>
         <h1>Redux Baseball Pitchers</h1>
-        <h2>On the Mound: {this.state.currentPitcher}</h2>
+        <OnTheMound />
         <h2>Behind the Plate: {this.state.currentCatcher}</h2>
         <TotalPitchers />
         <TotalCatchers />
