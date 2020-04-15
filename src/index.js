@@ -6,15 +6,23 @@ import App from './components/App/App';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 
+const defaultPitchers = ['Maud Nelson', 'Ila Borders', 'Don Newcombe', 'CC Sabathia'];
+const defaultCatchers = ['Roy Campanella', 'Elston Howard', 'Kenji Jojima']
+
 // create individual reducers
-const baseball = (state, action) => {
+const pitchersList = (state = defaultPitchers, action) => {
+  return state;
+};
+
+const catchersList = (state = defaultCatchers, action) => {
   return state;
 };
 
 // configure our redux store
 const storeInstance = createStore(
   combineReducers({
-    baseball
+    pitchersList,
+    catchersList,
   })
 );
 
