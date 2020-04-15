@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import TotalPitchers from '../TotalPitchers/TotalPitchers';
 import TotalCatchers from '../TotalCatchers/TotalCatchers';
 import OnTheMound from '../OnTheMound/OnTheMound';
+import BehindThePlate from '../BehindThePlate/BehindThePlate';
 
 class App extends Component {
   state = {
@@ -58,7 +59,7 @@ class App extends Component {
       <div>
         <h1>Redux Baseball Pitchers</h1>
         <OnTheMound />
-        <h2>Behind the Plate: {this.state.currentCatcher}</h2>
+        <BehindThePlate />
         <TotalPitchers />
         <TotalCatchers />
         <h3>All Pitchers</h3>
